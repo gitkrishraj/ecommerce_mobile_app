@@ -9,12 +9,12 @@ class Profile extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-           Image.asset(
-             "images/profile3.png",
-             fit: BoxFit.cover,
-             height: size.height,
-             width: size.width,
-           ),
+          //  Image.asset(
+          //    "images/profile3.png",
+          //    fit: BoxFit.cover,
+          //    height: size.height,
+          //    width: size.width,
+          //  ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 20),
             child: Align(
@@ -39,11 +39,11 @@ class Profile extends StatelessWidget {
                               children: [
                                 Stack(
                                   children: [
-                                    const CircleAvatar(
-                                      radius: 42,
-                                      backgroundImage:
-                                          AssetImage("images/profile3.png"),
-                                    ),
+                                     const CircleAvatar(
+                                       radius: 42,
+                                       backgroundImage:
+                                           AssetImage("images/profile3.png"),
+                                     ),
                                     Positioned(
                                       bottom: 0,
                                       right: 0,
@@ -74,12 +74,12 @@ class Profile extends StatelessWidget {
                                               color: Colors.black54)),
                                       padding: const EdgeInsets.symmetric(
                                           vertical: 9, horizontal: 12),
-                                      child: const Text(
-                                        "ADD FRIEND",
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 15),
-                                      ),
+                                      // child: const Text(
+                                      //   "ADD FRIEND",
+                                      //   style: TextStyle(
+                                      //       fontWeight: FontWeight.bold,
+                                      //       fontSize: 15),
+                                      // ),
                                     ),
                                     const SizedBox(width: 8),
                                     Container(
@@ -89,14 +89,14 @@ class Profile extends StatelessWidget {
                                       ),
                                       padding: const EdgeInsets.symmetric(
                                           vertical: 8, horizontal: 12),
-                                      child: const Text(
-                                        "Follow",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 16,
-                                          color: Colors.white,
-                                        ),
-                                      ),
+                                      //  child: const Text(
+                                      //   "Follow",
+                                      //    style: TextStyle(
+                                      //     fontWeight: FontWeight.bold,
+                                      //      fontSize: 16,
+                                      //     color: Colors.white,
+                                      //   ),
+                                      // ),
                                     )
                                   ],
                                 )
@@ -121,9 +121,9 @@ class Profile extends StatelessWidget {
                               height: 15,
                             ),
                             const Text(
-                              "A Flutter developer is a software engineer who has proficiency with the Flutter framework to develop mobile, web,",
+                              "A Flutter developer is a software engineer who has proficiency with the Flutter framework to develop mobile, web,mobile number 8651281962",
                               style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 12,
                               ),
                             ),
                           ],
@@ -134,7 +134,7 @@ class Profile extends StatelessWidget {
                         color: Colors.black12,
                       ),
                       SizedBox(
-                        height: 65,
+                        height: 25,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [

@@ -21,9 +21,9 @@ class _CartScreenState extends State<CartScreen> {
       return GestureDetector(
         onTap: () {
           setState(() {
-            icon == Icons.add
-                ? provider.incrementQtn(index)
-                : provider.decrementQtn(index);
+            icon == Icons.remove
+                ? provider.decrementQtn(index)
+                : provider.incrementQtn(index);
           });
         },
         child: Icon(
@@ -36,8 +36,7 @@ class _CartScreenState extends State<CartScreen> {
     return Scaffold(
       // for total and check out
       backgroundColor: kcontentColor,
-      bottomSheet:  CheckOutBox(),
-
+      bottomSheet: CheckOutBox(),
       body: SafeArea(
         child: Column(
           children: [
@@ -118,7 +117,7 @@ class _CartScreenState extends State<CartScreen> {
                                   const SizedBox(height: 5),
                                   Text(
                                     cartItems.category,
-                                    style:const TextStyle(
+                                    style: const TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.bold,
                                       color: Colors.grey,
@@ -170,7 +169,7 @@ class _CartScreenState extends State<CartScreen> {
                               child: Row(
                                 children: [
                                   const SizedBox(width: 10),
-                                  productQuantity(Icons.add, index),
+                                  productQuantity(Icons.remove, index),
                                   const SizedBox(width: 10),
                                   Text(
                                     cartItems.quantity.toString(),
@@ -180,7 +179,7 @@ class _CartScreenState extends State<CartScreen> {
                                     ),
                                   ),
                                   const SizedBox(width: 10),
-                                  productQuantity(Icons.remove, index),
+                                  productQuantity(Icons.add, index),
                                   const SizedBox(width: 10),
                                 ],
                               ),

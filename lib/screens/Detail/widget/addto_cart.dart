@@ -40,11 +40,9 @@ class _AddToCartState extends State<AddToCart> {
                 children: [
                   IconButton(
                     onPressed: () {
-                      if (currentIndex != 1) {
-                        setState(() {
-                          currentIndex--;
-                        });
-                      }
+                      setState(() {
+                        currentIndex++;
+                      });
                     },
                     iconSize: 18,
                     icon: const Icon(
@@ -63,16 +61,18 @@ class _AddToCartState extends State<AddToCart> {
                   const SizedBox(width: 5),
                   IconButton(
                     onPressed: () {
+                      if (currentIndex != 1) {
                         setState(() {
-                        currentIndex++;
-                      });
+                          currentIndex--;
+                        });
+                      }
                     },
                     iconSize: 18,
                     icon: const Icon(
                       Icons.add,
                       color: Colors.white,
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
@@ -108,7 +108,7 @@ class _AddToCartState extends State<AddToCart> {
                       fontSize: 20),
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
