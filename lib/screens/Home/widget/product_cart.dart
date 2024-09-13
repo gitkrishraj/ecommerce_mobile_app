@@ -37,13 +37,13 @@ class ProductCard extends StatelessWidget {
                     tag: product.image,
                     child: Image.asset(
                       product.image,
-                      width: 150,
-                      height: 150,
+                      width: 120,
+                      height: 120,
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
-                const SizedBox(height: 10),
+                const SizedBox(height: 5),
                 Padding(
                   padding: const EdgeInsets.only(left: 10),
                   child: Text(
@@ -54,7 +54,6 @@ class ProductCard extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(height: 10),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
